@@ -3,6 +3,10 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import axios from "axios";
 import VueAxios from 'vue-axios'
 
+//autocomplete
+require('vue2-autocomplete-js/dist/style/vue2-autocomplete.css')
+import Autocomplete from 'vue2-autocomplete-js'
+
 //import * as types from './mutations
 
 require('./bootstrap');
@@ -21,6 +25,7 @@ import Cart from './components/Cart'
 const app = new Vue({
   el: '#app',
   components: {
+    'autocomplete': Autocomplete,
     'navbar': Navbar,
     'product-list': ProductList,
     'cart': Cart,  
