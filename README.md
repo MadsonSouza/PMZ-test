@@ -5,6 +5,9 @@ composer create-project --prefer-dist laravel/laravel laravel
 #instala instancia do laravel, nginx e banco de dados mysql
 docker-compose up -d
 
+#executando o comando abaixo na pasta laravel, irá instalar os modulos necessários via node listados em package.json
+npm instal 
+
 #para criar as tabelas no banco de dados
 php artisan migrate
 
