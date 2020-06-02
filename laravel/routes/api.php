@@ -8,4 +8,5 @@ Route::get('user', 'UserController@index');
 Route::get('user/{id}', 'UserController@show');
 
 Route::get('products', 'ProductController@index');
+Route::get('productsRand', 'ProductController@showRandom');
 Route::get('product/{id}', 'ProductController@show');

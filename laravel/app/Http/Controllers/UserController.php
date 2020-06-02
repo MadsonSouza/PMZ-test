@@ -16,5 +16,4 @@ class UserController extends Controller
         return User::findOrFail($id);
     }
 
-
 }
